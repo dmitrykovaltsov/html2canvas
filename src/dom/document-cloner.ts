@@ -313,6 +313,8 @@ export class DocumentCloner {
                 (isTextareaElement(clone) || isSelectElement(clone))
             ) {
                 clone.value = node.value;
+            } else if (isSVGElementNode(node) && isSVGElementNode(clone)) {
+                copyCSSStyles(style, clone);
             }
 
             return clone;
