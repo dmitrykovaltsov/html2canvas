@@ -1,4 +1,3 @@
-/dist
 /tmp
 /build
 /nbproject/
@@ -17,3 +16,5 @@ debug.log
 tests/reftests.js
 *.log
 .rpt2_cache
+dist/lib
+dist/types
